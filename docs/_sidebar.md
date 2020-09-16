@@ -1,0 +1,2 @@
+- [Shimakaze Docs](/)
+  - [Shimakaze.Struct.Ini](Shimakaze.Struct.Ini/index.md)
