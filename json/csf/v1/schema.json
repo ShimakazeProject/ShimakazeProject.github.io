@@ -61,13 +61,13 @@
                         "oneOf": [
                             {
                                 "type": "string",
-                                "pattern": "^((?!\\\\r).)*$"
+                                "pattern": "^((?!\\r).)*$"
                             },
                             {
                                 "type": "array",
                                 "items": {
                                     "type": "string",
-                                    "pattern": "^((?!\\\\r).)*$"
+                                    "pattern": "^((?!\\r).)*$"
                                 }
                             }
                         ]
@@ -78,13 +78,13 @@
                             "oneOf": [
                                 {
                                     "type": "string",
-                                    "pattern": "^((?!\\\\r).)*$"
+                                    "pattern": "^((?!\\r).)*$"
                                 },
                                 {
                                     "type": "array",
                                     "items": {
                                         "type": "string",
-                                        "pattern": "^((?!\\\\r).)*$"
+                                        "pattern": "^((?!\\r).)*$"
                                     }
                                 },
                                 {
@@ -94,13 +94,13 @@
                                             "oneOf": [
                                                 {
                                                     "type": "string",
-                                                    "pattern": "^((?!\\\\r).)*$"
+                                                    "pattern": "^((?!\\r).)*$"
                                                 },
                                                 {
                                                     "type": "array",
                                                     "items": {
                                                         "type": "string",
-                                                        "pattern": "^((?!\\\\r).)*$"
+                                                        "pattern": "^((?!\\r).)*$"
                                                     }
                                                 }
                                             ]
