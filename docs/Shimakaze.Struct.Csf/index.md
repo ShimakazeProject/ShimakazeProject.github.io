@@ -2,7 +2,6 @@
 
 ```csharp
 using Shimakaze.Struct.Csf;
-using Shimakaze.Struct.Csf.Utils;
 
 Stream inCsf ;
 Stream outCsf ;
