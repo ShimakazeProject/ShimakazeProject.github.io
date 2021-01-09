@@ -55,17 +55,19 @@
                 "properties": {
                     "label": {
                         "type": "string",
-                        "pattern": "^[\\x00-\\xFF]*$"
+                        "pattern": "^[\\x20-\\x7E]*$"
                     },
                     "value": {
                         "oneOf": [
                             {
-                                "type": "string"
+                                "type": "string",
+                                "pattern": "^((?!\\\\r).)*$"
                             },
                             {
                                 "type": "array",
                                 "items": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "pattern": "^((?!\\\\r).)*$"
                                 }
                             }
                         ]
@@ -75,12 +77,14 @@
                         "items": {
                             "oneOf": [
                                 {
-                                    "type": "string"
+                                    "type": "string",
+                                    "pattern": "^((?!\\\\r).)*$"
                                 },
                                 {
                                     "type": "array",
                                     "items": {
-                                        "type": "string"
+                                        "type": "string",
+                                        "pattern": "^((?!\\\\r).)*$"
                                     }
                                 },
                                 {
@@ -89,19 +93,21 @@
                                         "value": {
                                             "oneOf": [
                                                 {
-                                                    "type": "string"
+                                                    "type": "string",
+                                                    "pattern": "^((?!\\\\r).)*$"
                                                 },
                                                 {
                                                     "type": "array",
                                                     "items": {
-                                                        "type": "string"
+                                                        "type": "string",
+                                                        "pattern": "^((?!\\\\r).)*$"
                                                     }
                                                 }
                                             ]
                                         },
                                         "extra": {
                                             "type": "string",
-                                            "pattern": "^\\w*$"
+                                            "pattern": "^[\\x20-\\x7E]*$"
                                         }
                                     },
                                     "required": [
