@@ -76,7 +76,7 @@
     "advancedCsfValue": {
       "type": "object",
       "description": "高级CSF值结构",
-      "additionaProperties": false,
+      "additionalProperties": false,
       "properties": {
         "value": {
           "oneOf": [
@@ -99,7 +99,7 @@
     "csfValueArray": {
       "type": "object",
       "description": "CSF值数组结构",
-      "additionaProperties": false,
+      "additionalProperties": false,
       "properties": {
         "values": {
           "type": "array",
