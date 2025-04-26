@@ -1,0 +1,52 @@
+{
+  "name": "shimakaze-org",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "项目首页",
+  "license": "MIT",
+  "packageManager": "pnpm@10.9.0+sha256.ea53ab747ac8b7921de63b42eab1adf021e1fe6ded05f62f00885cc33a46118d",
+  "scripts": {
+    "build": "vuepress-vite build docs",
+    "clean-dev": "vuepress-vite dev docs --clean-cache",
+    "dev": "vuepress-vite dev docs",
+    "format": "prettier --write .",
+    "prepare": "husky",
+    "update-package": "pnpm dlx vp-update"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.21",
+    "@vuepress/plugin-feed": "2.0.0-rc.96",
+    "husky": "^9.1.7",
+    "mermaid": "^11.6.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "prettier-plugin-pkg": "^0.19.0",
+    "sass-embedded": "^1.86.3",
+    "vue": "^3.5.13",
+    "vuepress": "2.0.0-rc.21",
+    "vuepress-theme-hope": "2.0.0-rc.82"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": false,
+    "singleQuote": true,
+    "quoteProps": "as-needed",
+    "jsxSingleQuote": false,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "bracketSameLine": true,
+    "arrowParens": "avoid",
+    "endOfLine": "auto",
+    "plugins": [
+      "prettier-plugin-organize-imports",
+      "prettier-plugin-pkg"
+    ]
+  }
+}
